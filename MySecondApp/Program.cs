@@ -1,4 +1,4 @@
-﻿namespace MySecondApp;
+namespace MySecondApp;
 
 public class MySecondApp
 {
@@ -22,7 +22,7 @@ public class MySecondApp
     {
         Header(args);
         Console.WriteLine("Hello user!");
-        Console.WriteLine("Select the option: \n [1] It's par?");
+        Console.WriteLine("Select the option: \n [1] Is this number even?");
         Console.Write("R: ");
         string j = Console.ReadLine();
         Console.Clear();
@@ -37,11 +37,11 @@ public class MySecondApp
                 {
                     if (int.Parse(i) % 2 == 0)
                     {
-                        Console.WriteLine($"the number {i} it's par");
+                        Console.WriteLine($"the number {i} is even");
                     }
                     else
                     {
-                        Console.WriteLine($"the number {i} it's impar");
+                        Console.WriteLine($"the number {i} is odd");
                     }
 
                     Task.Delay(1000).Wait();
